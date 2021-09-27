@@ -3,7 +3,7 @@ import * as wss from "./wss.js";
 import * as webRTCHandler from "./webRTCHandler.js";
 import * as constants from './constants.js';
 
-const socket = io("localhost:3001");
+const socket = io("localhost:3000");
 wss.registerSocketEvents(socket);
 webRTCHandler.getLocalPreview();
 
